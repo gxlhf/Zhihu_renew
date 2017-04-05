@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>知湖</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" type="text/css" href="static/update_2016/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="static/update_2016/css/main.css">
+	<link rel="stylesheet" type="text/css" href="static/update_2016/css/iconfont.css">
+</head>
+<body>
+	<header>
+		<img id="btn-menu" src="img/menu.png">
+		<img id="btn-home" class="hide" src="img/back.png">
+		<h1 class="hide">演&nbsp;&nbsp;出</h1>
+		<form id="form-search">
+			<input type="text" name="keyword">
+			<i id="btn-search" class="iconfont icon-search"></i>
+		</form>
+		<button id="btn-rank">排序 ▼</button>
+	</header>
+	<div id="drop-rank">
+		<p class="btn-ranktype" rankType = "0">按 时 间</p>
+		<p class="btn-ranktype" rankType = "1">按 热 度</p>
+	</div>
+	<div class="sidebar">
+		<img id="btn-back" src="img/back.png">
+		<div>
+			<img src="static/update_2016/img/logo.png">
+			<ul>
+        <hr>
+				<li onclick='window.location.href="./admin.php?m=exter&a=index_new"'>
+					<img src="img/post.png">
+					<span>发  表</span>
+				</li>
+				<li class="btn-kind" kind="520" onclick='window.location.href="#"'>
+					<img src="img/bookmark.png">
+					<span>收  藏</span>
+				</li>
+				<!-- 
+				<li onclick='window.location.href=""'>
+					<img src="img/recomand.png">
+					<span>推  荐</span>
+				</li>
+				 -->
+				<hr>
+				<li class="btn-kind" kind="3">
+					<img src="img/演出.png">
+					<span>&nbsp;演  出</span>
+				</li>
+				<li class="btn-kind" kind="4">
+					<img src="img/讲座.png">
+					<span>&nbsp;讲  座</span>
+				</li>
+				<li class="btn-kind" kind="5">
+					<img src="img/比赛.png">
+					<span>&nbsp;比  赛</span>
+				</li>
+				<li class="btn-kind" kind="2">
+					<img src="img/招募.png">
+					<span>&nbsp;招  募</span>
+				</li>
+				<li class="btn-kind" kind="1">
+					<img src="img/其他.png">
+					<span>&nbsp;其  他</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="under-layer"></div>
+	<div id="loading-layer">
+		<img src="img/loading.gif">
+	</div>
+
+	<div id="actlist" class="content">
+		<!-- <div class="actitem">
+			<div class="left-side">
+				<h2>活动名称活动名称活动名称</h2>
+				<p><img src="img/locate.png">北校大礼堂</p>
+				<p><img src="img/time.png">6月14日6月14日6月14日6月14日6月14日6月14日6月14日6月14日6月14日6月14日6月14日6月14日</p>
+			</div>
+			<div class="right-side">
+				<p><img src="img/比赛.png">比赛</p>
+				<p><img src="img/like.png">123</p>
+			</div>
+		</div> -->      
+		<div id="loadmore">正在加载中...</div>
+	</div>
+
+	<div id="detail">
+		<div id="detail-header">
+			<img id="detail-logo" src="img/logo.png">
+			<h3><nobr>作者</nobr></h3>
+			<img id="detail-close" src="img/close.png">
+		</div>
+		<div id="detail-lower">
+			<div id="detail-title" detail-actid = "269">
+				<h4>活动标题活动标题活动标题活动标题</h4>
+				<p>
+					<img src="img/演出.png">演出  
+					<span>
+						阅读 233&nbsp;&nbsp;
+						<img id="btn-like" src="img/unlike.png">
+						<span id="detail-likecount">72</span>
+					</span>
+				</p>
+				<p><img src="img/locate.png">大礼堂</p>
+				<p><img src="img/time.png">9月11日</p>
+			</div>
+			<div id="detail-content">
+				<p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>			
+			</div>
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="static/update_2016/js/jquery-3.1.1.min.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="static/update_2016/js/get_content.js" charset="UTF-8"></script>
+	<script type="text/javascript">
+		//锁定与解锁底部页面滚动
+		var pos;
+		function lockList() {
+			pos = $('body').scrollTop();
+			$('#actlist').css('position','fixed');
+			$('#actlist').css('top',-pos + 45 + 'px');
+		}
+		function unlockList() {
+			$('#actlist').css('position','relative');
+			$('#actlist').css('top',45 + 'px');
+			$('body').scrollTop(pos);
+		}
+
+		$(document).ready(function () {         //jQuery 就绪
+			$('#btn-menu').click(function () {  //弹出菜单
+				$('.sidebar').css('left','0');
+				$('#under-layer').show();
+				lockList();
+			});
+			$('#btn-back').click(function () {  //菜单收回
+				$('.sidebar').css('left','-100%');
+				$('#under-layer').hide();
+				unlockList();
+			});
+			$('#btn-rank').click(function () {  //点击弹出排序选项
+				$('#drop-rank').css('top', '38px');
+				$('#under-layer').show();
+			});
+			$('.btn-ranktype').click(function () {  //点击排序选项获取按某种方式排序的活动列表
+				searchFlag = false;
+				rankType = $(this).attr('rankType');
+			});
+			$('#under-layer').click(function () {  //收回排序选项和菜单
+				$('#drop-rank').css('top', '-60px');
+				$('.sidebar').css('left', '-100%');
+				$('#under-layer').hide();
+				$('#detail').hide();
+				unlockList();
+			});
+			$('.btn-kind').click(function (a) {  //按类别筛选
+				kind = $(this).attr('kind');
+				var kindname;
+				switch(kind)
+				{
+					case '3': kindname = '演&nbsp;&nbsp;出';break;
+					case '4': kindname = '讲&nbsp;&nbsp;座';break;
+					case '5': kindname = '比&nbsp;&nbsp;赛';break;
+					case '2': kindname = '招&nbsp;&nbsp;募';break;
+					case '1': kindname = '其&nbsp;&nbsp;他';break;
+					case '520': kindname = '收&nbsp;&nbsp;藏';break;
+				};
+				$('.sidebar').css('left', '-100%');
+				$('#btn-menu').hide();
+				$('#btn-home').show();
+				$('#form-search').hide();
+				$('header > h1').html(kindname);
+				$('header > h1').css('display', 'inline');
+				$('#under-layer').hide();
+				$('.act-item').remove();
+				searchFlag = false;
+				kind = $(this).attr('kind');
+				lastActID = '';
+				$('.act-item').remove();
+				var resp = gen_discover_acts_kind(eachtimeLimit, lastActID, kind, getIndexListLink);
+				if(resp == '404')
+				{
+					window.location.href = 'out_of_wx.html';
+				}
+				else
+				{
+					addActs(resp.obj);
+				}
+				unlockList();
+			});	
+			$('#btn-home').click(function (a) {
+				$('#btn-menu').show();
+				$('#btn-home').hide();
+				$('#form-search').show();
+				$('header > h1').hide();
+				$('#btn-rank').removeClass('invisible');
+				$('.act-item').remove();
+				searchFlag = false;
+				rankFlag = false;
+				kind = '';
+				lastActID = '';
+				var respObj = gen_discover_acts(eachtimeLimit, lastActID, getIndexListLink).obj;
+				addActs(respObj);
+				unlockList();
+			});
+			$('.btn-ranktype').click(function (a) {
+				$('.act-item').remove();
+				$('#drop-rank').css('top', '-60px');
+				$('#under-layer').hide();
+				rankType = $(this).attr('rankType');
+				lastActID = '';
+				rankFlag = true;
+				if(kind == '')
+					var respObj = gen_discover_acts_rank(eachtimeLimit, lastActID, rankType, getIndexListLink).obj;
+				else
+					var respObj = gen_discover_acts_rank_kind(eachtimeLimit, lastActID, rankType, kind, getIndexListLink).obj;
+				addActs(respObj);
+			});
+			$('#btn-search').click(function () {
+				$('#form-search').submit();
+      		});
+			$('#form-search').submit(function (e) {  //搜索框搜索
+				e.preventDefault();
+				$('#btn-menu').hide();
+				$('#btn-home').show();
+				$('#btn-rank').addClass('invisible');
+				$('.act-item').remove();
+				keyword = $('[name = "keyword"]').val();
+				lastActID = '';
+				searchFlag = true;
+				var respObj = gen_search_acts(eachtimeLimit, lastActID, keyword, getSearchLink).obj;
+				addActs(respObj);
+				// $('h2').each(function () {
+				// 	keywordHighlight($(this), keyword);
+				// })
+			});
+
+			//调整详情弹框大小
+			$('#detail').css('width', ($(window).width() - 36 - 16) + 'px');
+			$('#detail').css('height', ($(window).height() - 30 - 45 - 16) + 'px');
+
+			addActs(gen_discover_acts(eachtimeLimit, lastActID, getIndexListLink).obj);
+		});
+	</script>
+	<script type="text/javascript" src="static/update_2016/js/fill_page_index.js"></script>
+</body>
+</html>

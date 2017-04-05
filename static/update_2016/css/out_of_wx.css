@@ -1,0 +1,20 @@
+*{font-family: 'Microsoft Yahei';}
+
+div {
+	text-align: center;
+	padding-top: 50px;
+	margin-bottom: 20px;
+}
+
+img{
+	width: 80%;
+}
+
+button {
+	width: 80%;
+	background: #448acd;
+	border: 0px;
+	border-radius: 5px;
+	height: 30px;
+	color: white;
+}

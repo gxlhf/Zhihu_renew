@@ -1,0 +1,354 @@
+*{font-family: 'Microsoft Yahei';}
+
+.hide {
+    display: none;
+}
+
+.invisible {
+    visibility: hidden !important;
+}
+
+/*头部样式*/
+header {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    background: #448acd;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-weight: normal;
+}
+header > img {
+    height: 29px;
+    float: left; 
+    margin-top: 7px; 
+    margin-left: 4px;
+    margin-right: 14px;
+}
+header > form {
+    display: inline;
+    margin-right: -16px;
+}
+header > form > input {
+    font-size: 15px;
+    height: 18px;
+    width: 145px;
+    color: white;
+    padding-left: 8px;
+    border: solid white 2px;
+    background: #448acd;
+    border-radius: 100px;
+    margin-right: -3px
+}
+header > h1 {
+    font-size: 22px;
+    font-weight: normal;
+    display: inline;
+}
+.icon-search {
+    position: relative;
+    right: 25px;
+    padding: 3px;
+}
+.icon-search:before {
+    content: "\e60b";
+}
+header > button {
+    color: white;
+    float: right;
+    height: 45px;
+    background: transparent;
+    border: none;
+    margin-right: 9px;
+    font-size: 16px;
+}
+h2 > em {
+    color: red;
+}
+
+#drop-rank {
+    z-index: 5;
+    position: fixed;
+    top: -60px;
+    right: 8px;
+    background: white;
+    padding: 2px 5px;
+    border-radius: 5px;
+
+    color: #4E4E4E;
+    font-size: 13px;
+
+    transition: top 0.5s;
+    -moz-box-shadow:1px 1px 5px rgba(0,0,0,.3);;
+    -webkit-box-shadow: 1px 1px 5px rgba(0,0,0,.3);;
+    box-shadow:1px 1px 5px rgba(0,0,0,.3);;
+}
+#drop-rank  p:not(:first-child) {
+    border-top: solid #D8D8D8 1px;
+    padding-top: 4px;
+}
+#drop-rank p {
+    padding: 2px 5px;
+}
+
+/*侧栏样式*/
+.sidebar {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    z-index: 100000;
+    height: 100%;
+    width: 48%;
+    background-color: #0d47a1;
+    overflow-y: scroll;
+    color: white;
+    font-size: 22px;
+
+    transition: left 0.5s;
+    -moz-box-shadow:3px 3px 5px rgba(0,0,0,.15);;
+    -webkit-box-shadow: 3px 3px 5px rgba(0,0,0,.15);;
+    box-shadow:3px 3px 5px rgba(0,0,0,.15);;
+}
+#btn-back {
+    margin-top: 10px;
+    height: 30px;
+    display: block;
+    position: fixed;
+}
+:vertical { /* 定义滚动条宽度 */
+    width: 0px;
+}
+::-webkit-scrollbar { /* 定义滚动条宽度 */
+    width: 0px;
+}
+.sidebar > div > img {
+    border-radius: 100px;
+    width: 70px;
+    height: 70px !important;
+    position: relative;
+    right: -4%;
+}
+.sidebar > div {
+    text-align: center;
+    margin-top: 50px;
+}
+.sidebar h1 {
+    font-size: 28px;
+    font-weight: normal;
+}
+.sidebar ul {
+    list-style: none;
+    line-height: 30px;
+    margin-top: 15px;
+}
+.sidebar li {
+    height: 30px;
+    margin: 15px 0px;
+}
+.sidebar hr {
+    width: 70%;
+    margin: 0% 15%;
+    border: 0px;
+    border-bottom: #a9bac9 solid 1px;
+}
+.sidebar > div span {
+    display: inline;
+    font-size: 20px;
+    height: 30px;
+    position: relative;
+    top: -6px;
+}
+.sidebar > div  img{
+    height: 30px;
+}
+.btn-kind > img {
+    -webkit-filter:saturate(0);
+    -webkit-filter:brightness(10000000);
+}
+
+#under-layer {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: 4;
+    display: none;
+}
+
+#loading-layer {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.33);
+    z-index: 4;
+    text-align: center;
+    line-height: 100%;
+    display: none;
+}
+
+#loading-layer img {
+    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+    margin-left: -16px;
+}
+
+/*活动列表样式*/
+.content {
+    position: relative;
+    top: 45px;
+    padding: 0px 10px;
+}
+.content > div {
+    padding: 11px 5px;
+}
+.content > div:not(:first-child) {
+    border-top: solid #D8D8D8 1px;
+}
+.content > div > div {
+    display: inline-block;
+    vertical-align: top;
+}
+.content p {
+    font-size: 13px;
+    line-height: 16px;
+    color: #8b8b8b;
+    padding-top: 2px;
+}
+.content h2 {
+    font-size: 17px;
+    line-height: 20px;
+    color: #4E4E4E;
+}
+.content h2 > span {
+    display: inline-block;
+    font-size: 8px;
+    font-weight: normal;
+    vertical-align: middle;
+    margin-top: -4px;
+    margin-left: 3px;
+    padding: 1px;
+    border: 1px solid red;
+    color: red;
+    line-height: 9px;
+}
+.content img {
+    height: 16px;
+    position: relative;
+    top: 3px;
+    left: -2px;
+}
+.left-side {
+    width: 69%;
+}
+.left-side p {    /*实现悬挂缩进*/
+    padding-left: 14px;
+    text-indent: -14px;
+}
+.right-side {
+    float: right;
+    width: 30%;
+}
+.right-side p {
+    width: 50%;
+    padding-bottom: 5px;
+    margin-top: -3px;
+    float: right;
+    text-align: center;
+}
+
+/*详情框样式*/
+#detail {
+    display: none;
+    background: white;
+    position: fixed;
+    top: 45px;
+    margin: 15px 20px;
+    padding: 8px;
+    border-radius: 15px;
+    -moz-box-shadow:0px 0px 5em rgba(0,0,0,.4);
+    -webkit-box-shadow: 0px 0px 5em rgba(0,0,0,.4);
+    box-shadow:0px 0px 5em rgba(0,0,0,.4);
+    z-index: 10;
+}
+
+#detail-logo {
+    border-radius: 100px;
+    border: solid white 3px;
+    width: 50px;
+    position: relative;
+    top: -19px;
+    left: -24px;
+    float: left;
+}
+
+#detail-close {
+    float: right;
+    height: 25px;
+}
+
+#detail-header > h3 {
+    display: inline-block;
+    font-size: 15px;
+    margin-left: -15px;
+    line-height: 25px;
+    color: #8b8b8b;    
+    max-width: 213px;
+    height: 25px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#detail-lower {
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: inherit;
+    position: relative;
+    top: -22px;
+}
+
+#detail-title {
+    padding: 0px 10px 10px;
+    border-bottom: solid #D8D8D8 1px;
+}
+
+#detail-title > h4 {
+    font-size: 20px;
+}
+
+#detail-title p{
+    text-indent: -14px;
+    padding-left: 14px;
+    font-size: 13px;
+    line-height: 19px;
+    color: #8b8b8b;
+    padding-top: 2px;
+}
+
+#detail-title p > img, #detail-title p > span > img { /**/
+    height: 16px;
+    position: relative;
+    top: 3px;
+    left: -2px;
+}
+
+#detail-title > p > span { /**/
+    float: right;
+}
+
+#detail-content {
+    margin-top: 10px;
+    padding: 0px 10px;
+    max-width: 99%;
+}
+
+#detail-content img{
+    max-width:99%;
+    margin: 0 auto;
+}
